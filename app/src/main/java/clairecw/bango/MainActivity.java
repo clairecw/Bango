@@ -1,9 +1,17 @@
 package clairecw.bango;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -17,57 +25,75 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ListView fruitsList;
-    String url = "https://www.thecrazyprogrammer.com/example_data/fruits_array.json";
-    ProgressDialog dialog;
+    Button create;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fruitsList = (ListView)findViewById(R.id.listview);
 
-        dialog = new ProgressDialog(this);
-        dialog.setMessage("Loading....");
-        dialog.show();
 
-        StringRequest request = new StringRequest(url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String string) {
-                parseJsonData(string);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError volleyError) {
-                Toast.makeText(getApplicationContext(), "Some error occurred!!", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
+        create = (Button)findViewById(R.id.button4);
+        create.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this,
+                        clairecw.bango.CreateActivity.class);
+                startActivity(myIntent);
             }
         });
 
-        RequestQueue rQueue = Volley.newRequestQueue(MainActivity.this);
-        rQueue.add(request);
+        Button join = (Button)findViewById(R.id.button6);
+        join.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Enter Game ID");
+
+// Set up the input
+                final EditText input = new EditText(MainActivity.this);
+// Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+                input.setInputType(InputType.TYPE_CLASS_NUMBER);
+                builder.setView(input);
+
+// Set up the buttons
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        int gameid = Integer.parseInt(input.getText().toString());
+
+                        Intent myIntent = new Intent(MainActivity.this,
+                                clairecw.bango.BoardActivity.class);
+                        myIntent.putExtra("gameid", gameid);
+                        startActivity(myIntent);
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+                builder.show();
+            }
+        });
+
     }
 
-    void parseJsonData(String jsonString) {
+
+
+    public static int getResId(String resName, Class<?> c) {
+
         try {
-            JSONObject object = new JSONObject(jsonString);
-            JSONArray fruitsArray = object.getJSONArray("fruits");
-            ArrayList al = new ArrayList();
-
-            for(int i = 0; i < fruitsArray.length(); ++i) {
-                al.add(fruitsArray.getString(i));
-            }
-
-            ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, al);
-            fruitsList.setAdapter(adapter);
-        } catch (JSONException e) {
+            Field idField = c.getDeclaredField(resName);
+            return idField.getInt(idField);
+        } catch (Exception e) {
             e.printStackTrace();
+            return -1;
         }
-
-        dialog.dismiss();
     }
 }
