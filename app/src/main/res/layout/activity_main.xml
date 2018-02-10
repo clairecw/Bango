@@ -4,7 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
+    tools:context="com.example.harlenesamra.bangotartanhacks.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="135dp"
+        android:background="@android:color/background_light"
+        android:contentDescription="Bang"
+        android:visibility="visible"
+        app:srcCompat="@drawable/bang"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="124dp"
+        android:fontFamily="@font/coiny"
+        android:text="O"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="72sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="0dp" />
+=======
     tools:context="clairecw.bango.MainActivity">
+>>>>>>> refs/remotes/origin/master
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -46,9 +74,28 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
         android:text="@string/create_game" />
+=======
+<<<<<<< HEAD
+        android:text="Create Game"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to Facebook"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="408dp" />
+=======
+        android:text="Button"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="247dp" />
+>>>>>>> origin/master
 
     <Button
         android:id="@+id/button6"
@@ -58,6 +105,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/join_game" />
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
@@ -66,4 +114,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/connect_to_facebook" />
     </RelativeLayout>
+=======
+>>>>>>> refs/remotes/origin/master
+>>>>>>> origin/master
 </android.support.constraint.ConstraintLayout>

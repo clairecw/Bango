@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+    package="com.example.harlenesamra.bangotartanhacks">
+=======
     package="clairecw.bango">
+>>>>>>> refs/remotes/origin/master
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -18,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".BoardActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
@@ -27,4 +32,22 @@
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
+=======
+<<<<<<< HEAD
+        <activity android:name=".MyBoards" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Board"></activity>
+    </application>
+=======
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+>>>>>>> refs/remotes/origin/master
+
+>>>>>>> origin/master
 </manifest>

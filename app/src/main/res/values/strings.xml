@@ -1,5 +1,9 @@
 <resources>
+<<<<<<< HEAD
+    <string name="app_name">Bango Tartan Hacks</string>
+=======
     <string name="app_name">Bango</string>
+<<<<<<< HEAD
     <string name="create_a_new_game_below">Create a New Game Below</string>
     <string name="name_of_board">Name of Board:</string>
     <string name="items">Items:</string>
@@ -22,4 +26,7 @@
     <string name="create_game">Create Game</string>
     <string name="start">Start Game</string>
     <string name="o">O</string>
+=======
+>>>>>>> refs/remotes/origin/master
+>>>>>>> origin/master
 </resources>
