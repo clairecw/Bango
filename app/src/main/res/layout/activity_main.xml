@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context="com.example.harlenesamra.bangotartanhacks.MainActivity">
 
     <ImageView
@@ -29,11 +30,15 @@
         android:textStyle="normal"
         tools:layout_editor_absoluteX="240dp"
         tools:layout_editor_absoluteY="0dp" />
+=======
+    tools:context="clairecw.bango.MainActivity">
+>>>>>>> refs/remotes/origin/master
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Create Game"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="231dp" />
@@ -45,4 +50,15 @@
         android:text="Connect to Facebook"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="408dp" />
+=======
+        android:text="Button"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+
+>>>>>>> refs/remotes/origin/master
 </android.support.constraint.ConstraintLayout>

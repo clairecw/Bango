@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Bango Tartan Hacks</string>
+=======
+    <string name="app_name">Bango</string>
+>>>>>>> refs/remotes/origin/master
 </resources>

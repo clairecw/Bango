@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.harlenesamra.bangotartanhacks">
+=======
+    package="clairecw.bango">
+>>>>>>> refs/remotes/origin/master
 
     <application
         android:allowBackup="true"
@@ -16,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".MyBoards" />
 
         <meta-data
@@ -24,5 +29,11 @@
 
         <activity android:name=".Board"></activity>
     </application>
+=======
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+>>>>>>> refs/remotes/origin/master
 
 </manifest>
