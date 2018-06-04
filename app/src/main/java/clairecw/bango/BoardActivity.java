@@ -56,6 +56,12 @@ public class BoardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_board);
 
         bango = (Button)findViewById(R.id.buttonCheck);
+        final Button button1 = (Button)findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                button1.setBackgroundResource(R.drawable.button);
+            }
+        });
 
         Intent intent = getIntent();
         gameid = intent.getIntExtra("gameid", 0);

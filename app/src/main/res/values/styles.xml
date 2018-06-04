@@ -26,7 +26,7 @@
     <style name="boardButton" parent="Theme.AppCompat.Light.NoActionBar" tools:targetApi="21">
         <item name="android:textColor">#000</item>
         <item name="android:padding">10dp</item>
-        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_marginBottom">-10dp</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:textCursorDrawable">@null</item>
         <!--<item name="colorControlNormal">@color/colorPrimary</item>
@@ -34,6 +34,25 @@
         <item name="colorControlHighlight">@color/colorPrimaryDark</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:colorButtonNormal">@color/colorPrimary</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:background">#444</item>
+    </style>
+
+    <style name="boardButtonD" parent="Theme.AppCompat.Light.NoActionBar" tools:targetApi="21">
+        <item name="android:textColor">#000</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">-10dp</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="colorControlNormal">#555</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:background">#555</item>
+        <item name="android:colorButtonNormal">#555</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">0.2</item>

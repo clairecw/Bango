@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="clairecw.bango.BoardActivity"
-    >
+    tools:context="clairecw.bango.BoardActivity">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:letterSpacing="1"
+        android:layout_marginTop="16dp"
         android:gravity="center"
+        android:letterSpacing="0.6"
         android:text="BANGO"
         android:textColor="#FFF"
         android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,8 +28,8 @@
         android:layout_marginTop="80dp"
         android:adjustViewBounds="true"
         android:minHeight="400dp"
+        android:padding="10dp"
         android:scaleType="fitCenter"
-        android:padding="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/text"
@@ -37,253 +37,255 @@
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="0.2"
             android:padding="0dp">
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Patriots score a touchdown"
-                android:textSize="@dimen/small_text"
                 android:id="@+id/button1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2"/>
+                android:layout_weight="0.2"
+                android:text="Patriots score a touchdown"
+                android:textSize="@dimen/small_text"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Star Wars commercial"
-                android:textSize="@dimen/small_text"
                 android:id="@+id/button2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Wardrobe malfunction at Half-Time"
+                android:textSize="@dimen/small_text"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Celebrity on Patriots side"
                 android:id="@+id/button3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Celebrity on Patriots side"
+                android:theme="@style/boardButtonD" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Patriots fumble"
                 android:id="@+id/button4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Patriots fumble"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Mention of Trump"
                 android:id="@+id/button5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Mention of Trump"
+                android:theme="@style/boardButtonD" />
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
-            android:padding="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0.2">
+            android:layout_weight="0.2"
+            android:padding="0dp">
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Celebrity in crowd"
                 android:id="@+id/button6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Celebrity in crowd"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Car commercial"
                 android:id="@+id/button7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Car commercial"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Offside penalty"
                 android:id="@+id/button8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Offside penalty"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Fan with body paint"
                 android:id="@+id/button9"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Fan with body paint"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Coach hides behind clipboard"
                 android:id="@+id/button10"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Coach hides behind clipboard"
+                android:theme="@style/boardButton" />
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
-            android:padding="0dp"
             android:layout_height="0dp"
-            android:layout_weight="0.2">
+            android:layout_weight="0.2"
+            android:padding="0dp">
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Coca-Cola commercial"
                 android:id="@+id/button11"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Coca-Cola commercial"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Papa John's commercial"
                 android:id="@+id/button12"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Papa John's commercial"
+                android:theme="@style/boardButtonD" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="FREE"
                 android:id="@+id/button13"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="FREE"
+                android:theme="@style/boardButtonD" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Wardrobe malfunction at Half-Time"
                 android:id="@+id/button14"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Star Wars commercial"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Blank screen"
                 android:id="@+id/button15"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Blank screen"
+                android:theme="@style/boardButton" />
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:padding="0dp"
-            android:layout_weight="0.2">
+            android:layout_weight="0.2"
+            android:padding="0dp">
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Eagles win"
                 android:id="@+id/button16"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Eagles win"
+                android:theme="@style/boardButtonD" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Patriots miss the conversion"
                 android:id="@+id/button17"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Patriots miss the conversion"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Beer commercial"
                 android:id="@+id/button18"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Beer commercial"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Viral moment at Half-Time"
                 android:id="@+id/button19"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Viral moment at Half-Time"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Patriots win"
                 android:id="@+id/button20"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Patriots win"
+                android:theme="@style/boardButton" />
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:padding="0dp"
-            android:layout_weight="0.2">
+            android:layout_weight="0.2"
+            android:padding="0dp">
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Celebrity on Eagles side"
                 android:id="@+id/button21"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Celebrity on Eagles side"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Fan with painted face"
                 android:id="@+id/button22"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Fan with painted face"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Dorito commercial"
                 android:id="@+id/button23"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Dorito commercial"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Cheerleader"
                 android:id="@+id/button24"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Cheerleader"
+                android:theme="@style/boardButton" />
 
             <Button
-                android:theme="@style/boardButton"
-                android:text="Athlete cries"
                 android:id="@+id/button25"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2" />
+                android:layout_weight="0.2"
+                android:text="Athlete cries"
+                android:theme="@style/boardButton" />
         </TableRow>
 
 
     </TableLayout>
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonCheck"
-        android:layout_width="100dp"
-        android:scaleType="fitXY"
-        android:layout_marginTop="11dp"
-        android:background="#00000000"
-        android:src="@drawable/bang-excl"
-        android:style="@style/primaryButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/bang_excl"
+        android:theme="@style/boardButton"
+        app:layout_constraintTop_toBottomOf="@id/tableLayout"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
