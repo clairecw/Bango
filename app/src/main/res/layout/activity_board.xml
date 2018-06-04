@@ -65,7 +65,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
                 android:text="Celebrity on Patriots side"
-                android:theme="@style/boardButtonD" />
+                android:theme="@style/boardButton" />
 
             <Button
                 android:id="@+id/button4"
@@ -81,7 +81,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
                 android:text="Mention of Trump"
-                android:theme="@style/boardButtonD" />
+                android:theme="@style/boardButton" />
         </TableRow>
 
         <TableRow
@@ -151,7 +151,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
                 android:text="Papa John's commercial"
-                android:theme="@style/boardButtonD" />
+                android:theme="@style/boardButton" />
 
             <Button
                 android:id="@+id/button13"
@@ -206,7 +206,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
                 android:text="Beer commercial"
-                android:theme="@style/boardButton" />
+                android:theme="@style/boardButtonD" />
 
             <Button
                 android:id="@+id/button19"
